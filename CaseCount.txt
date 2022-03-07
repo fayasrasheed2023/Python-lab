@@ -1,0 +1,25 @@
+# Count Case function
+
+def case_count(str):
+    lower = []
+    upper = []
+    for i in str:
+        if i.islower():
+            lower.append(i)
+
+        elif i.isupper():
+            upper.append(i)
+    print("Lowercase list=", lower, "\nUppercase list=", upper)
+    count = 0
+    for i in lower:
+        count = count + 1
+    print("Count of lowercase letters=", count)
+    count = 0
+    for i in upper:
+        count = count + 1
+    print("Count of uppercase letters=", count)
+
+#main
+
+str = input("Enter a string:")
+case_count(str)

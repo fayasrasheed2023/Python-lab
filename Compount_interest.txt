@@ -1,0 +1,19 @@
+# Compound Interest
+p=int(input("Enter the principal amount:"))
+n=int(input("Enter the number of years:"))
+r=float(input("Enter the rate of interest:"))
+
+"""
+#a=(1+(r/100))
+#a1=pow(a,n)
+"""
+
+a1=(1+(r/100))**n
+amount=p*a1
+print("Total amount=",amount)
+compound_interest=amount-p
+print("Compound interest=",compound_interest)
+
+
+
+
